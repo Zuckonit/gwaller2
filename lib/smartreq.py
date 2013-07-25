@@ -112,8 +112,8 @@ class Req(object):
 
 #>>>>>> This is for test <<<<<<<
 def main():
-    user = 'lsin30@foxmail.com'
-    pawd = 'yang3136299'
+    user = ''  #your diandian username
+    pawd = ''  #your diandian password
     url = 'http://www.diandian.com/login'
     postdata = {
         'account': user,
