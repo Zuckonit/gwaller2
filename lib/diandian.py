@@ -298,8 +298,9 @@ def opt(arg):
         print "type %s -h to get help" % (os.path.basename(sys.argv[0]))
 
 def _test():
-    username = 'lsin30@foxmail.com'
-    password = 'yang3136299'
+    import config
+    username = config.ACCOUNT['username']
+    password = config.ACCOUNT['password']
     demo = Diandian(username, password)
     demo._login()
     #print demo.post_image('gwaller','1.jpg')

@@ -111,9 +111,10 @@ class Req(object):
 
 
 #>>>>>> This is for test <<<<<<<
-def main():
-    user = ''  #your diandian username
-    pawd = ''  #your diandian password
+def _test():
+    import config  #lazy import
+    user = config.ACCOUNT['username']  #config.py
+    pawd = config.ACCOUNT['password']  #config.py
     url = 'http://www.diandian.com/login'
     postdata = {
         'account': user,
@@ -125,4 +126,4 @@ def main():
     print jmp.read()
 
 if __name__ == '__main__':
-    main()
+    _test()

@@ -17,8 +17,8 @@ FILES = {
 }
 
 ACCOUNT = {
-    'username':'lsin30@foxmail.com',
-    'password':'yang3136299',
+    'username':'', #your diandian username
+    'password':'', #your diandian password
 }
 
 
